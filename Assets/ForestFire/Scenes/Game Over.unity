@@ -548,7 +548,6 @@ GameObject:
   - component: {fileID: 517134332}
   - component: {fileID: 517134335}
   - component: {fileID: 517134334}
-  - component: {fileID: 517134333}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -576,19 +575,6 @@ RectTransform:
   m_AnchoredPosition: {x: -59, y: 132.15314}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &517134333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517134331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8736422e15c4f34fac2d1f804c84aa3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Text: {fileID: 0}
 --- !u!114 &517134334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,7 +1262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1092933142
 Transform:
   m_ObjectHideFlags: 0
@@ -1299,10 +1285,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4754294210375399160, guid: 88ca74c2fda62784d928ebacea7a6063,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4754294210375399161, guid: 88ca74c2fda62784d928ebacea7a6063,
         type: 3}
       propertyPath: m_Name
       value: Fire VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754294210375399161, guid: 88ca74c2fda62784d928ebacea7a6063,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4754294210375399162, guid: 88ca74c2fda62784d928ebacea7a6063,
         type: 3}
@@ -2218,7 +2214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1971370572
 Transform:
   m_ObjectHideFlags: 0

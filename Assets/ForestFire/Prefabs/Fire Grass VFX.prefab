@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePlayer: 0
-  damageTime: 0.05
+  damageTime: 1
   currentDamageTime: 0
   playerHealthScript: {fileID: 0}
   inFire: 0

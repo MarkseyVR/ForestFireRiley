@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerMaxHealth = 10; //set players starting/max health
+        playerMaxHealth = 7; //set players starting/max health
         playerCurrentHealth = playerMaxHealth; 
 
      
@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( playerCurrentHealth < 0) //If current health reaches 0 change scene
+        if ( playerCurrentHealth <= 0) //If current health reaches 0 change scene
         {
             ChangeScene();
         }
