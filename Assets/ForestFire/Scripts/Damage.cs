@@ -9,7 +9,7 @@ public class Damage : MonoBehaviour
     public float damageTime = 1f; //How often I want to damge the player 
     public PlayerHealth playerHealthScript; //reference to playerhealth script
     public bool inFire;
-   
+    public float damageAmount;
 
     // Start is called before the first frame update
     void Start()
