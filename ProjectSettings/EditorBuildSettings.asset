@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ForestFire/Scenes/ForestFire3D.unity
     guid: bdfaffa30ba9dc844afffb78261241c8
+  - enabled: 1
+    path: Assets/ForestFire/Scenes/Game Over.unity
+    guid: 8bec42c157dcf5b479715e278b2f32e5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cc9d5552ba6b55642b1f810556cfdcdf,
       type: 2}
