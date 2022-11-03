@@ -10,6 +10,7 @@ public class Damage : MonoBehaviour
     public PlayerHealth playerHealthScript; //reference to playerhealth script
     public bool inFire;
     public float damageAmount;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -50,10 +51,16 @@ public class Damage : MonoBehaviour
             else
             {
                 Debug.Log("Coroutine started in fire");
-                playerHealthScript.playerCurrentHealth -= damageAmount;
+                playerHealthScript.playerCurrentHealth -= damageAmount; // Does damage to player 
                 Debug.Log(playerHealthScript.playerCurrentHealth);
-                yield return new WaitForSeconds(damageTime);
+                yield return new WaitForSeconds(damageTime); // States how long to wait before damaging player again(reference to damage time above)
                 StartCoroutine(ApplyDamage());
+
+                if( audioSource.isPlaying == false)
+                {
+                    audioSource.Play();
+                }
+
             }
             
 
@@ -61,7 +68,7 @@ public class Damage : MonoBehaviour
         else
         {
             Debug.Log("stopping coroutine");
-            StopCoroutine(ApplyDamage());
+            StopCoroutine(ApplyDamage()); // Stop coroutine
         }
     }
 }
