@@ -56,7 +56,7 @@ public class Damage : MonoBehaviour
                 yield return new WaitForSeconds(damageTime); // States how long to wait before damaging player again(reference to damage time above)
                 StartCoroutine(ApplyDamage());
 
-                if( audioSource.isPlaying == false)
+                if( audioSource.isPlaying == false) /// Play audio source when in fire and if audio isnt already playing
                 {
                     audioSource.Play();
                 }
